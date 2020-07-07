@@ -1,17 +1,11 @@
-"use trict";
+// "use strict";
 
-// const city = null;
+// const name = "Генератор защитного поля";
 
-// console.log(typeof city);
+// let price = "1000";
 
-// let temp;
+// console.log(`Выбран «${name}», цена за штуку ${price} кредитов`);
 
-// console.log(temp);
+// price = "2000";
 
-// const random = {};
-
-// console.log(typeof (random));
-
-
-
-
+// console.log(`Выбран «${name}», цена за штуку ${price} кредитов`);
