@@ -2,17 +2,12 @@
 
 let deliveryCountry = prompt('Укажите страну доставки');
 
-if (deliveryCountry === "") {
+if (deliveryCountry === null) {
     alert('Вы не указали страну доставки!');
 }
 else {
     deliveryCountry = deliveryCountry.toLowerCase();
 
-    const china = "китай";
-    const chile = "чили";
-    const australia = "австралия";
-    const india = "индия";
-    const jamaica = "ямайка";
     const chinaPrice = 100;
     const chilePrice = 250;
     const australiaPrice = 170;
@@ -20,27 +15,37 @@ else {
     const jamaicaPrice = 120;
 
     switch (deliveryCountry) {
-        case china:
-            alert(`Доставка в ${china} будет стоить ${chinaPrice} кредитов`);
-            break;
+      case "китай":
+        alert(
+          `Доставка в ${deliveryCountry} будет стоить ${chinaPrice} кредитов`
+        );
+        break;
 
-        case chile:
-            alert(`Доставка в ${chile} будет стоить ${chilePrice} кредитов`);
-            break;
+      case "чили":
+        alert(
+          `Доставка в ${deliveryCountry} будет стоить ${chilePrice} кредитов`
+        );
+        break;
 
-        case australia:
-            alert(`Доставка в ${australia} будет стоить ${australiaPrice} кредитов`);
-            break;
+      case "австралия":
+        alert(
+          `Доставка в ${deliveryCountry} будет стоить ${australiaPrice} кредитов`
+        );
+        break;
 
-        case india:
-            alert(`Доставка в ${india} будет стоить ${indiaPrice} кредитов`);
-            break;
+      case "индия":
+        alert(
+          `Доставка в ${deliveryCountry} будет стоить ${indiaPrice} кредитов`
+        );
+        break;
 
-        case jamaica:
-            alert(`Доставка в ${jamaica} будет стоить ${jamaicaPrice} кредитов`);
-            break;
+      case "ямайка":
+        alert(
+          `Доставка в ${deliveryCountry} будет стоить ${jamaicaPrice} кредитов`
+        );
+        break;
 
-        default:
-            alert('В вашей стране доставка не доступна');
+      default:
+        alert("В вашей стране доставка не доступна");
     }
 }

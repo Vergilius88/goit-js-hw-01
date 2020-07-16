@@ -1,8 +1,8 @@
 "use strict";
 
-let credits = 23580;
+const credits = 23580;
 
-let pricePerDroid = 3000;
+const pricePerDroid = 3000; 
 
 const amount = prompt("Желаемое количество ремонтных дроидов");
 
